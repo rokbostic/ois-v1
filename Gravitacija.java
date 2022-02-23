@@ -10,6 +10,11 @@ public class Gravitacija{
 		double r = 6.371*Math.pow(10, 6);
 		return (c*m/(Math.pow((r+h), 2)));
 	}
+
+	public static void izpis(double a, double b){
+		System.out.println(a);
+		System.out.println(b);
+	}
 	
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
@@ -17,8 +22,8 @@ public class Gravitacija{
 		
 		double nadmorska_visina = sc.nextDouble();
 		double gravitacijski_pospesek = izracun(nadmorska_visina);
-		
 
-		System.out.println("Pospesek je: " + gravitacijski_pospesek);
+		izpis(gravitacijski_pospesek, nadmorska_visina);
+		//System.out.println("Pospesek je: " + gravitacijski_pospesek);
 	}
 }
