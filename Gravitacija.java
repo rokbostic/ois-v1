@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.Math;
 
 
 public class Gravitacija{
